@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('gif.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 80px ;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background:url('giphy.gif')no-repeat center center fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+
+h1 {
+    color: #555;
+}
+
+#upload-form {
+    position: relative;
+    margin: 20px 0;
+}
+
+#upload-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#upload-btn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.file-name {
+    flex: 1;
+}
+
+.file-progress {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.progress-percent {
+    width: 50px;
+    text-align: right;
+}
