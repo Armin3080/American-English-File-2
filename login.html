@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    /* CSS styles */
+    body {
+      background: url('gif.gif') no-repeat center center fixed;
+      font-family: 'Anonymous Pro', monospace;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+    }
+    .container {
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-image: url('mr.jpg');
+      /* قرار دادن در وسط صفحه */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ff5555;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .input-field {
+      margin-bottom: 5px;
+    }
+    .input-field label {
+      display: block;
+      margin-bottom: 3px;
+      font-weight: bold;
+    }
+    .input-field input {
+      width: 50%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff5555;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .color {
+      color: #ff5555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Private page</h1>
+    <form id="loginForm">
+      <div class="input-field">
+        <label class="color" for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+      </div>
+      <div class="input-field">
+        <label class="color" for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+      <button type="submit" class="button">Log In</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get the values entered by the user
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if username and password are correct (example validation)
+      if (username === "admin" && password === "login2024") {
+        // Redirect to the desired page (replace 'target_page.html' with your desired page)
+        window.location.href = "private.html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>
